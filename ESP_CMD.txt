@@ -1,0 +1,3 @@
+idf.py bootloader
+esptool.py --chip esp32s3 --port=COM6 --baud=115200 --before=default_reset --after=no_reset --no-stub write_flash --flash_mode dio --flash_freq 80m --flash_size keep 0x0 C:/Espressif/frameworks/esp-idf-v5.0/workspace/ARNrPRO_MASTER/build/bootloader/bootloader.bin
+idf.py flash
